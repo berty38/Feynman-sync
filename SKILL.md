@@ -1,6 +1,6 @@
 ---
 name: feynman-sync
-description: Make the AI, and the user with it, truly understand the project the AI is working on, by keeping a living, top-down "Feynman method" document in which the AI explains the project's core reasoning in plain language, so an LLM-assisted project doesn't drift, forget settled conclusions, or keep confidently wrong claims. Use whenever a project has an evolving argument or design (research analysis, method design, modeling choices, a long investigation), when the user asks to write up, merge or update "the doc" of our thinking, when a debate in chat reaches a conclusion that should be kept, when the user asks whether the doc is up to date, or when a new session needs to pick up the reasoning, not just the status. Also use it to start such a doc for a new multi-session project, even if the user doesn't name the method.
+description: Maintain a concise, human-readable explanation when a project's interacting concepts, decisions or evolving understanding make shared reasoning difficult to keep clear. Judge when a project has reached that complexity and create or update the doc proportionately; also use for direct requests to explain, discuss or maintain that doc. Do not create a teaching artifact for small, self-contained tasks such as proofreading an email or paper or fixing a typo. Guided tutoring requires an explicit request.
 ---
 
 # Feynman doc
@@ -18,6 +18,15 @@ errors get caught: an argument that sounds fine in chat often falls apart when i
 
 It is not a status log or handoff note. Keep those separate: the status doc records what happened, what is running and what to
 do next; the Feynman doc records why the current position is the right one.
+
+## When to use it
+
+Use judgment about when interacting concepts, decisions or evolving understanding make a shared explanation worthwhile,
+across subjects. Start the doc when that complexity emerges, even without an explicit request. Small, self-contained tasks
+such as proofreading an email or paper or fixing a typo do not need a teaching artifact.
+
+Reuse an existing doc and update only what has changed. Keep it concise enough for a person to read; do not create a new
+large explanation every turn. This implicit activation applies to the shared document; guided tutoring remains opt-in.
 
 ## Why this matters for LLM-assisted work
 

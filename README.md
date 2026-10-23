@@ -66,7 +66,10 @@ the current position is the right one.
 
 ## Using it
 
-The skill triggers on its own for projects with an evolving argument or design. You can also ask directly:
+The agent judges when a project's interacting concepts, decisions or evolving understanding would benefit from a concise
+shared explanation, across subjects. It can start the doc without an explicit request, then reuse and update it
+proportionately. Small, self-contained tasks such as proofreading an email or paper or fixing a typo do not need a teaching
+artifact. You can also ask directly:
 
 - "Start a Feynman doc for this project."
 - "We settled that; put it in the doc."
