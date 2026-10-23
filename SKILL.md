@@ -6,14 +6,14 @@ description: Maintain a concise, human-readable explanation during sustained wor
 # Feynman doc
 
 The Feynman method has two students: the one who explains, who finds the gaps in their own understanding while trying to
-make it simple, and the one who listens, who learns and pushes back where the explanation doesn't hold. Here the AI doing the
-work writes the explanation, so its grasp of the project is tested on the page instead of assumed, and the user reads it,
+make it simple, and the one who listens, who learns and pushes back where the explanation doesn't hold. As the agent doing the
+work, write the explanation so your grasp of the project is tested on the page instead of assumed. The user reads it,
 learns the parts they haven't worked through themselves, and challenges what doesn't hold up. Both understand the project
 better, and the user's challenges are the strongest check on the AI. (This differs from tools whose only aim is to explain the
 AI's work to the user.)
 
-A Feynman doc explains the whole framework of a project's thinking, top down, as if teaching it to a smart colleague who
-knows the field but not this project. It is the single place where the current best understanding lives. Writing it is how
+Explain the whole framework of the project's thinking in the Feynman doc, top down, as if teaching it to a smart colleague who
+knows the field but not this project. Make it the single place where the current best understanding lives. Writing it is how
 errors get caught: an argument that sounds fine in chat often falls apart when it has to cohere end to end on the page.
 
 It is not a status log or handoff note. Keep those separate: the status doc records what happened, what is running and what to
@@ -22,8 +22,8 @@ do next; the Feynman doc records why the current position is the right one.
 ## When to use it
 
 Activate during sustained work on a system, model or body of reasoning whose concepts, assumptions, dependencies or
-consequential design choices interact. Maintaining a human-readable explanation is part of this work, regardless of the
-agent's confidence or an explicit request. Do not make activation depend on deciding that the user needs an explanation.
+consequential design choices interact. Maintaining a human-readable explanation is part of this work, regardless of
+your confidence or an explicit request. Do not make activation depend on deciding that the user needs an explanation.
 
 Many steps alone do not qualify. Routine proofreading, shopping and one-off deliverables ordinarily stay outside this skill
 unless the work develops an underlying system or reusable method. For example, developing and revising a decision model
@@ -87,10 +87,9 @@ Shape it to the project, but most good ones have:
   references that cannot be made safe.
 - **Make freshness visible.** Record when the doc was checked and, where relevant, the source revision or configuration.
   Recheck affected claims when these change; distinguish dated snapshots from current behavior.
-- **Name things neutrally.** Avoid names that imply correctness or completeness for things that are really assumptions
-  (prefer a descriptive name over "complete", "correct", "true").
-- **Keep it legible.** Short paragraphs, lists and tables over walls of text; no implementation detail unless the reader needs
-  it to follow the argument; one example per point, the most realistic one first.
+- **Keep it legible.** Use short paragraphs, lists and tables; give one example per point, the most realistic one first.
+- **Choose detail to serve the explanation.** Include implementation details when they help the reader understand behavior,
+  reasoning, tradeoffs, or failure modes. Omit incidental mechanics that don't contribute.
 - **Keep a single entry point.** The doc may link to supporting sections. When merging or replacing an older doc, leave a
   one-line "superseded by" pointer instead of deleting it, and point the status doc and project notes at the new one.
 - **Make figures rebuildable.** If the doc needs generated figures, keep their scripts in the project and reuse existing tools

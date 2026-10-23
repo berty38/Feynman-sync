@@ -49,13 +49,14 @@ the current position is the right one.
 
 ## How the AI keeps it
 
-- Folds settled conclusions into the doc in the same turn they are settled
+- Folds settled conclusions into the doc in the same turn they are settled, within the requested maintenance scope
 - Restructures rather than appends, and re-derives sections instead of copying stale text forward
 - Marks claims as measured, argued, or intuition, and flags citations recalled from memory as unverified
-- Uses neutral names that don't imply correctness for what are really assumptions
-- Keeps it legible: short paragraphs, tables, one realistic example per point, no implementation detail the reader doesn't need
-- Keeps one doc, leaving "superseded by" pointers to older ones
-- Generates figures from scripts in the project, so the whole doc can be rebuilt
+- Keeps it legible: short paragraphs, tables and one realistic example per point
+- Chooses detail to serve the explanation, including implementation details when they help you understand behavior, reasoning,
+  tradeoffs, or failure modes; omits incidental mechanics that don't contribute
+- Keeps one shared doc with a single entry point and linked supporting sections, leaving "superseded by" pointers to older ones
+- Keeps scripts for any generated figures in the project, reusing existing tools so figures can be rebuilt
 - Walks the argument top down when asked whether the doc is up to date, and fixes what no longer holds
 
 ## Install
@@ -66,11 +67,11 @@ the current position is the right one.
 
 ## Using it
 
-Use this skill during sustained work on a system, model or body of reasoning with interacting concepts, assumptions,
-dependencies or consequential design choices. Maintaining the human-readable explanation is part of that work, regardless
-of confidence or an explicit request. Many steps alone do not qualify: routine proofreading, shopping and one-off deliverables
-ordinarily stay outside it unless developing an underlying system or reusable method. Reuse and update one concise doc
-proportionately. You can also ask directly:
+The skill activates during sustained work on a system, model or body of reasoning with interacting concepts, assumptions,
+dependencies or consequential design choices. The AI maintains a human-readable explanation as part of that work, regardless
+of its confidence or whether it thinks you need an explanation, and without waiting for an explicit request. Many steps alone
+do not qualify: routine proofreading, shopping and one-off deliverables ordinarily stay outside it unless the work develops an
+underlying system or reusable method. The AI reuses and updates one concise doc proportionately. You can also ask directly:
 
 - "Start a Feynman doc for this project."
 - "We settled that; put it in the doc."
@@ -79,10 +80,11 @@ proportionately. You can also ask directly:
 
 One durable shared doc supports three modes:
 
-- **Prepare/update:** A coherent, grounded explanation for asynchronous reading, with no live session required.
-- **Discuss:** User-led Q&A while reading, with direct answers and useful clarifications folded into the doc within the
-  requested maintenance scope. No quizzes or prescribed sequence.
-- **Tutor:** An explicitly requested guided walkthrough, using examples and comprehension checks; the AI waits and adapts.
+- **Prepare/update:** The AI writes a coherent, grounded explanation you can read on your own, with no live session required.
+- **Discuss:** You lead the Q&A as you read. The AI answers directly and folds useful clarifications into the doc within the
+  requested maintenance scope, without quizzes or a prescribed sequence.
+- **Tutor:** When you explicitly ask for a guided walkthrough, the AI uses examples and comprehension checks, waits for your
+  response before continuing, and adapts to your questions and understanding.
 
 Asynchronous reading and Q&A are the usual path. You do not need to choose a mode label, and ordinary questions do not start
 a tutoring session.
@@ -91,8 +93,9 @@ Consequential claims are checked against relevant sources, with freshness and im
 explicit. For research or design choices, the doc also asks what evidence would show the direction is wrong. Document work
 does not itself authorize experiments or changes to project behavior.
 
-Teaching documents must never contain secrets, credentials, private personal details or confidential values. Use generic
-placeholders or clearly synthetic examples, and keep source links and labels free of secrets or identifying details.
+The AI must never put secrets, credentials, private personal details or confidential values in teaching documents. It uses generic
+placeholders or clearly synthetic examples instead of reproducing sensitive source material for completeness. It keeps source
+links and labels free of secrets or identifying details, omitting or generalizing references that cannot be made safe.
 
 ## Origin
 
