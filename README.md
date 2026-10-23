@@ -73,6 +73,20 @@ The skill triggers on its own for projects with an evolving argument or design. 
 - "Is the doc up to date? Walk through it top down."
 - "Merge these two write-ups into one doc."
 
+One durable shared doc supports three modes:
+
+- **Prepare/update:** A coherent, grounded explanation for asynchronous reading, with no live session required.
+- **Discuss:** User-led Q&A while reading, with direct answers and useful clarifications folded into the doc within the
+  requested maintenance scope. No quizzes or prescribed sequence.
+- **Tutor:** An explicitly requested guided walkthrough, using examples and comprehension checks; the AI waits and adapts.
+
+Asynchronous reading and Q&A are the usual path. You do not need to choose a mode label, and ordinary questions do not start
+a tutoring session.
+
+Consequential claims are checked against relevant sources, with freshness and implemented versus proposed behavior made
+explicit. For research or design choices, the doc also asks what evidence would show the direction is wrong. Document work
+does not itself authorize experiments or changes to project behavior.
+
 ## Origin
 
 Developed during a long research collaboration on genome rearrangement analysis. Rewriting the doc repeatedly exposed claims
