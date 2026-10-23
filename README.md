@@ -66,10 +66,11 @@ the current position is the right one.
 
 ## Using it
 
-The agent judges when a project's interacting concepts, decisions or evolving understanding would benefit from a concise
-shared explanation, across subjects. It can start the doc without an explicit request, then reuse and update it
-proportionately. Small, self-contained tasks such as proofreading an email or paper or fixing a typo do not need a teaching
-artifact. You can also ask directly:
+Use this skill during sustained work on a system, model or body of reasoning with interacting concepts, assumptions,
+dependencies or consequential design choices. Maintaining the human-readable explanation is part of that work, regardless
+of confidence or an explicit request. Many steps alone do not qualify: routine proofreading, shopping and one-off deliverables
+ordinarily stay outside it unless developing an underlying system or reusable method. Reuse and update one concise doc
+proportionately. You can also ask directly:
 
 - "Start a Feynman doc for this project."
 - "We settled that; put it in the doc."
@@ -89,6 +90,9 @@ a tutoring session.
 Consequential claims are checked against relevant sources, with freshness and implemented versus proposed behavior made
 explicit. For research or design choices, the doc also asks what evidence would show the direction is wrong. Document work
 does not itself authorize experiments or changes to project behavior.
+
+Teaching documents must never contain secrets, credentials, private personal details or confidential values. Use generic
+placeholders or clearly synthetic examples, and keep source links and labels free of secrets or identifying details.
 
 ## Origin
 

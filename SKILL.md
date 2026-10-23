@@ -1,6 +1,6 @@
 ---
 name: feynman-sync
-description: Maintain a concise, human-readable explanation when a project's interacting concepts, decisions or evolving understanding make shared reasoning difficult to keep clear. Judge when a project has reached that complexity and create or update the doc proportionately; also use for direct requests to explain, discuss or maintain that doc. Do not create a teaching artifact for small, self-contained tasks such as proofreading an email or paper or fixing a typo. Guided tutoring requires an explicit request.
+description: Maintain a concise, human-readable explanation during sustained work on a system, model or body of reasoning with interacting concepts, assumptions, dependencies or consequential design choices. Activate for that work regardless of confidence or whether an explanation seems necessary; also use for direct requests to create, discuss or maintain the doc. Many steps alone do not qualify. Routine proofreading, shopping and one-off deliverables ordinarily do not qualify unless developing an underlying system or reusable method. Guided tutoring requires an explicit request.
 ---
 
 # Feynman doc
@@ -21,9 +21,13 @@ do next; the Feynman doc records why the current position is the right one.
 
 ## When to use it
 
-Use judgment about when interacting concepts, decisions or evolving understanding make a shared explanation worthwhile,
-across subjects. Start the doc when that complexity emerges, even without an explicit request. Small, self-contained tasks
-such as proofreading an email or paper or fixing a typo do not need a teaching artifact.
+Activate during sustained work on a system, model or body of reasoning whose concepts, assumptions, dependencies or
+consequential design choices interact. Maintaining a human-readable explanation is part of this work, regardless of the
+agent's confidence or an explicit request. Do not make activation depend on deciding that the user needs an explanation.
+
+Many steps alone do not qualify. Routine proofreading, shopping and one-off deliverables ordinarily stay outside this skill
+unless the work develops an underlying system or reusable method. For example, developing and revising a decision model
+qualifies; applying a fixed checklist to make a one-off choice ordinarily does not.
 
 Reuse an existing doc and update only what has changed. Keep it concise enough for a person to read; do not create a new
 large explanation every turn. This implicit activation applies to the shared document; guided tutoring remains opt-in.
@@ -77,6 +81,10 @@ Shape it to the project, but most good ones have:
   disagreements and counterevidence visible.
 - **Ground consequential claims.** Check the relevant source, implementation/configuration or recorded result, and link it
   near the claim. Match the detail to the consequence; a readable explanation is not itself verification.
+- **Exclude sensitive information.** Never put secrets, credentials, private personal details or confidential values in the
+  teaching doc. Preserve the explanation with generic placeholders or clearly synthetic examples; do not reproduce sensitive
+  source material for completeness. Source links and labels must not embed secrets or identifying details; omit or generalize
+  references that cannot be made safe.
 - **Make freshness visible.** Record when the doc was checked and, where relevant, the source revision or configuration.
   Recheck affected claims when these change; distinguish dated snapshots from current behavior.
 - **Name things neutrally.** Avoid names that imply correctness or completeness for things that are really assumptions
