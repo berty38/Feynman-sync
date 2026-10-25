@@ -96,8 +96,3 @@ does not itself authorize experiments or changes to project behavior.
 The AI must never put secrets, credentials, private personal details or confidential values in teaching documents. It uses generic
 placeholders or clearly synthetic examples instead of reproducing sensitive source material for completeness. It keeps source
 links and labels free of secrets or identifying details, omitting or generalizing references that cannot be made safe.
-
-## Origin
-
-Developed during a long research collaboration on genome rearrangement analysis. Rewriting the doc repeatedly exposed claims
-the AI had made confidently in chat that didn't hold up, and the human's challenges to the doc caught the rest.
