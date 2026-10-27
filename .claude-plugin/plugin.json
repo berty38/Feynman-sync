@@ -1,0 +1,7 @@
+{
+  "name": "feynman-sync",
+  "version": "0.1.0",
+  "description": "Keep a living, top-down Feynman-method document of a project's reasoning, so an LLM-assisted project doesn't drift, forget settled conclusions or keep confidently wrong claims.",
+  "author": { "name": "Bert Huang" },
+  "repository": "https://github.com/berty38/Feynman-sync"
+}

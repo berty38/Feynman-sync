@@ -1,0 +1,5 @@
+interface:
+  display_name: "Feynman Sync"
+  short_description: "Keep a living, top-down explanation of a project's reasoning"
+policy:
+  allow_implicit_invocation: true

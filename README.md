@@ -61,16 +61,21 @@ the current position is the right one.
 
 ## Install
 
-**Claude Code:** copy the `feynman-sync` folder into `~/.claude/skills/` (all projects) or `.claude/skills/` in a project.
+The skill itself is the folder `skills/feynman-sync/` (`SKILL.md`, plus optional Codex metadata in `agents/openai.yaml`).
 
-**Claude apps:** upload the packaged `feynman-sync.skill` file, or the folder, where your plan allows custom skills.
+**Claude Code:** copy or symlink `skills/feynman-sync` into `~/.claude/skills/` (all projects) or `.claude/skills/` in a
+project. The repo is also laid out as a Claude Code plugin (`.claude-plugin/plugin.json`).
+
+**Codex:** copy or symlink `skills/feynman-sync` into `~/.agents/skills/` (all projects) or `.agents/skills/` in a repo.
+
+**Claude apps:** run `scripts/build_skill.sh` and upload `dist/feynman-sync.skill`, where your plan allows custom skills.
 
 ## Using it
 
 The skill activates during sustained work on a system, model or body of reasoning with interacting concepts, assumptions,
 dependencies or consequential design choices. The AI maintains a human-readable explanation as part of that work, regardless
-of its confidence or whether it thinks you need an explanation, and without waiting for an explicit request. Many steps alone
-do not qualify: routine proofreading, shopping and one-off deliverables ordinarily stay outside it unless the work develops an
+of its confidence or whether it thinks you need an explanation, and without waiting for an explicit request. The length of a task alone
+does not qualify: routine proofreading, shopping and one-off deliverables ordinarily stay outside it unless the work develops an
 underlying system or reusable method. The AI reuses and updates one concise doc proportionately. You can also ask directly:
 
 - "Start a Feynman doc for this project."

@@ -1,6 +1,6 @@
 ---
 name: feynman-sync
-description: Maintain a concise, human-readable explanation during sustained work on a system, model or body of reasoning with interacting concepts, assumptions, dependencies or consequential design choices. Activate for that work regardless of confidence or whether an explanation seems necessary; also use for direct requests to create, discuss or maintain the doc. Many steps alone do not qualify. Routine proofreading, shopping and one-off deliverables ordinarily do not qualify unless developing an underlying system or reusable method. Guided tutoring requires an explicit request.
+description: Maintain a concise, human-readable explanation during sustained work on a system, model or body of reasoning with interacting concepts, assumptions, dependencies or consequential design choices. Activate for that work regardless of confidence or whether an explanation seems necessary; also use when the user asks to create, discuss or maintain the doc, for example "write up our thinking", "fold this into the doc", "is the doc up to date?", or when a new session needs to pick up the reasoning, not just the status. The length of a task alone does not qualify. Routine proofreading, shopping, one-off deliverables, and features or bug fixes in an established codebase ordinarily do not qualify unless they develop an underlying system, reusable method or evolving design. Guided tutoring requires an explicit request.
 ---
 
 # Feynman doc
@@ -25,9 +25,11 @@ Activate during sustained work on a system, model or body of reasoning whose con
 consequential design choices interact. Maintaining a human-readable explanation is part of this work, regardless of
 your confidence or an explicit request. Do not make activation depend on deciding that the user needs an explanation.
 
-Many steps alone do not qualify. Routine proofreading, shopping and one-off deliverables ordinarily stay outside this skill
-unless the work develops an underlying system or reusable method. For example, developing and revising a decision model
-qualifies; applying a fixed checklist to make a one-off choice ordinarily does not.
+The length of a task alone does not qualify. Routine proofreading, shopping and one-off deliverables ordinarily stay outside
+this skill unless the work develops an underlying system or reusable method. For example, developing and revising a decision
+model qualifies; applying a fixed checklist to make a one-off choice ordinarily does not. In code, a feature or bug fix in an
+established codebase ordinarily does not qualify; redesigning a model, pipeline or method whose reasoning is still evolving
+does.
 
 Reuse an existing doc and update only what has changed. Keep it concise enough for a person to read; do not create a new
 large explanation every turn. This implicit activation applies to the shared document; guided tutoring remains opt-in.
