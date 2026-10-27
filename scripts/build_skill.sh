@@ -4,5 +4,6 @@ set -euo pipefail
 cd "$(dirname "$0")/../skills"
 mkdir -p ../dist
 rm -f ../dist/feynman-sync.skill
-zip -qrX ../dist/feynman-sync.skill feynman-sync -x '*/.DS_Store'
+# Keep release inputs explicit so unrelated local files cannot enter the upload.
+zip -qX ../dist/feynman-sync.skill feynman-sync/SKILL.md feynman-sync/agents/openai.yaml
 echo "built dist/feynman-sync.skill"

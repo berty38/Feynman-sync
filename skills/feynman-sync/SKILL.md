@@ -1,6 +1,6 @@
 ---
 name: feynman-sync
-description: Maintain a concise, human-readable explanation during sustained work on a system, model or body of reasoning with interacting concepts, assumptions, dependencies or consequential design choices. Activate for that work regardless of confidence or whether an explanation seems necessary; also use when the user asks to create, discuss or maintain the doc, for example "write up our thinking", "fold this into the doc", "is the doc up to date?", or when a new session needs to pick up the reasoning, not just the status. The length of a task alone does not qualify. Routine proofreading, shopping, one-off deliverables, and features or bug fixes in an established codebase ordinarily do not qualify unless they develop an underlying system, reusable method or evolving design. Guided tutoring requires an explicit request.
+description: Maintain a concise, human-readable explanation during sustained work on a system, model or body of reasoning with interacting concepts, assumptions, dependencies or consequential design choices. Activate for that work regardless of confidence or whether an explanation seems necessary; also use for requests such as "write up our thinking", "fold this into the doc", "is the doc up to date?", or resuming the reasoning in a new session. Task length alone does not qualify. Routine proofreading, shopping, one-off deliverables and isolated features or bug fixes ordinarily do not call for a new teaching doc unless they develop an underlying system, reusable method or evolving design. Update an existing doc when its explanation changes. Guided tutoring requires an explicit request.
 ---
 
 # Feynman doc
@@ -27,9 +27,10 @@ your confidence or an explicit request. Do not make activation depend on decidin
 
 The length of a task alone does not qualify. Routine proofreading, shopping and one-off deliverables ordinarily stay outside
 this skill unless the work develops an underlying system or reusable method. For example, developing and revising a decision
-model qualifies; applying a fixed checklist to make a one-off choice ordinarily does not. In code, a feature or bug fix in an
-established codebase ordinarily does not qualify; redesigning a model, pipeline or method whose reasoning is still evolving
-does.
+model qualifies; applying a fixed checklist to make a one-off choice ordinarily does not. In code, an isolated feature or bug
+fix ordinarily does not call for a new teaching doc; redesigning a model, pipeline or method whose reasoning is still evolving
+does. If a change affects behavior, assumptions or tradeoffs explained in an existing doc, update the affected sections rather
+than treating the task label as an exemption.
 
 Reuse an existing doc and update only what has changed. Keep it concise enough for a person to read; do not create a new
 large explanation every turn. This implicit activation applies to the shared document; guided tutoring remains opt-in.

@@ -1,8 +1,8 @@
 # feynman-sync
 
 A skill for Claude (and other agents that read `SKILL.md` skills) in which the AI keeps a living, top-down document
-explaining a project's core reasoning in plain language. The AI writes it; you read it and push back. Both of you end up understanding the project
-better, and the project stops drifting.
+explaining a project's core reasoning in plain language. The AI writes it; you read it and push back. Both of you can understand
+the project better, and the written explanation makes drift easier to spot.
 
 ## The name
 
@@ -20,7 +20,8 @@ Long projects with an AI collaborator fail in quiet ways:
 - **Reasoning gets lost.** Context is compacted, sessions are handed off, and the "why" behind decisions is the first thing to go.
 - **Loose ends evaporate.** Ideas raised in chat and never filed are forgotten by both sides.
 
-A Feynman doc fixes these by making the AI explain the whole framework, simply and top down, and keep that explanation current.
+A Feynman doc helps catch these failures by making the AI explain the whole framework, simply and top down, and keep that
+explanation current.
 
 ## Two students
 
@@ -66,17 +67,24 @@ The skill itself is the folder `skills/feynman-sync/` (`SKILL.md`, plus optional
 **Claude Code:** copy or symlink `skills/feynman-sync` into `~/.claude/skills/` (all projects) or `.claude/skills/` in a
 project. The repo is also laid out as a Claude Code plugin (`.claude-plugin/plugin.json`).
 
-**Codex:** copy or symlink `skills/feynman-sync` into `~/.agents/skills/` (all projects) or `.agents/skills/` in a repo.
+**Codex:** copy or symlink the `skills/feynman-sync/` folder so `SKILL.md` ends up at
+`.agents/skills/feynman-sync/SKILL.md` in a repo, or `~/.agents/skills/feynman-sync/SKILL.md` for all projects.
+The included `agents/openai.yaml` provides display metadata and allows implicit invocation. The repository's `skills/` folder
+is distribution source; use one of those discovery locations for installation. After copying, confirm that the skill appears
+in your client. In Codex CLI or the IDE extension, you can invoke it explicitly as `$feynman-sync`.
 
-**Claude apps:** run `scripts/build_skill.sh` and upload `dist/feynman-sync.skill`, where your plan allows custom skills.
+**Claude apps:** with Bash and `zip` available, run `scripts/build_skill.sh` and upload `dist/feynman-sync.skill`, where your plan
+allows custom skills. The build includes only the skill instructions and Codex metadata, keeping unrelated local files out.
 
 ## Using it
 
 The skill activates during sustained work on a system, model or body of reasoning with interacting concepts, assumptions,
 dependencies or consequential design choices. The AI maintains a human-readable explanation as part of that work, regardless
-of its confidence or whether it thinks you need an explanation, and without waiting for an explicit request. The length of a task alone
-does not qualify: routine proofreading, shopping and one-off deliverables ordinarily stay outside it unless the work develops an
-underlying system or reusable method. The AI reuses and updates one concise doc proportionately. You can also ask directly:
+of its confidence or whether it thinks you need an explanation, and without waiting for an explicit request. The length of a task
+alone does not qualify: routine proofreading, shopping, one-off deliverables and isolated features or bug fixes ordinarily do not
+call for a new teaching doc unless the work develops an underlying system, reusable method or evolving design. Changes to an
+existing explanation still belong in that doc, including changes arising from a feature or bug fix. The AI reuses and updates
+one concise doc proportionately. You can also ask directly:
 
 - "Start a Feynman doc for this project."
 - "We settled that; put it in the doc."
